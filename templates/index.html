@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="{{url_for('static',filename='css/styles.css')}}"
+    />
+  </head>
+  <body>
+    <h1>Welcome to grade checker</h1>
+    <form action="/submit" method="post">
+      <label for="DATA440">DATA440:</label>
+      <input type="text" id="data440" name="DATA440" value="0" />
+      <label for="DATA480">DATA480:</label>
+      <input type="text" id="data480" name="DATA480" value="0" />
+      <label for="ARTI440">ARTI440:</label>
+      <input type="text" id="arti440" name="ARTI440" value="0" />
+      <label for="ETHI440">ETHI440:</label>
+      <input type="text" id="ethi440" name="ETHI440" value="0" />
+      <input type="Submit" value="Submit" />
+    </form>
+    <p>
+      If the submit button is clicked, the form data will be send to a page
+      called "/submit"
+    </p>
+  </body>
+</html>

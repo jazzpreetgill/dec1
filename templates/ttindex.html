@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="{{url_for('static',filename='css/styles.css')}}"
+    />
+  </head>
+  <body>
+    <h1>Welcome to Web Development and Cloud Computing</h1>
+    <form action="/submit" method="post">
+      <label for="DATA440">DATA440:</label><br />
+      <input type="text" id="data440" name="DATA440" value="0" /><br />
+      <label for="DATA480">DATA480:</label><br />
+      <input type="text" id="data480" name="DATA480" value="0" /><br />
+      <label for="ARTI404">ARTI404:</label><br />
+      <input type="text" id="arti404" name="ARTI404" value="0" /><br />
+      <label for="ARTI408">ARTI408:</label><br />
+      <input type="text" id="arti408" name="ARTI408" value="0" /><br />
+      <input type="submit" value="Submit" />
+    </form>
+    <p>
+      If the submit button is clicked, the form-data will be sent to a page
+      called "/submit
+    </p>
+  </body>
+</html>
